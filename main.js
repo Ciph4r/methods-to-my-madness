@@ -91,9 +91,7 @@ trimStart = (x) => {
   let newstring =''
   let erase = true
   
-  if (x === undefined || 
-    x[0] !== ' ' || 
-    x[0] !== ' ' && x[x.length-1] === ' '){
+  if (x[0] !== ' '){
       return x
     }
     for (let i = 0 ; x.length > i ; i++){
@@ -119,9 +117,7 @@ trimEnd = (x) => {
 
   
   
-  if (x === undefined || 
-    x[x.length-1] !== ' ' || 
-    x[x.length-1] !== ' ' && x[0] === ' '){
+  if (x[x.length-1] !== ' '){
       return x
     }
     for (let i = x.length-1 ; i >= 0 ; i--){
